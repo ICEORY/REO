@@ -6,21 +6,21 @@
 
 Existing methods mainly rely on spatial transformation with sensor calibration information. However, this operation also results in two significant issues: First, the model performance is degraded due to the calibration noise (e.g., changing of sensor position during driving ). Second, the spatial transformation is computationally expensive and limits the efficiency of existing methods. In this work, we exploit a calibration-free spatial transformation scheme based on the vanilla attention scheme, to project the 2D images and point clouds into a compact BEV plane. Besides, we also introduce extra auxiliary training tasks and an efficient decoder to improve the model performance and efficiency, respectively.
 
-![image-20241118152142577](D:\project\2023OccupancyNet\github-released\reo\asset\image-20241118152142577.png)
+![image-20241118152142577](./asset/image-20241118152142577.png)
 
 ## Main Results
 
 - Efficiency analysis on OpenOccupancy nuScenes
 
-  ![image-20241118152418778](D:\project\2023OccupancyNet\github-released\reo\asset\image-20241118152418778.png)
+  ![image-20241118152418778](./asset/image-20241118152418778.png)
 
 - Results on OpenOccupancy nuScenes 
 
-![image-20241118152243189](D:\project\2023OccupancyNet\github-released\reo\asset\image-20241118152243189.png)
+![image-20241118152243189](./asset/image-20241118152243189.png)
 
 - Results on OCC3D-nuScenes
 
-  ![image-20241118152315972](D:\project\2023OccupancyNet\github-released\reo\asset\image-20241118152315972.png)
+  ![image-20241118152315972](./asset/image-20241118152315972.png)
 
 ## How to use
 
