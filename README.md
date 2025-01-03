@@ -24,6 +24,16 @@
 
   ![image-20241118152315972](./asset/image-20241118152315972.png)
 
+## 测试集结果
+
+- [SemanticKITTI Scene Completion](https://codalab.lisn.upsaclay.fr/my/competition/submission/869748/detailed_results/)
+
+  ![image-20250103163319139](./asset/image-20250103163319139.png)
+
+- [OCC3D-nuScenes](https://eval.ai/web/challenges/challenge-page/2045/leaderboard/4838) 
+
+![img_v3_02i6_aa614cbb-0128-43ea-9822-6af651c45adg](./asset/img_v3_02i6_aa614cbb-0128-43ea-9822-6af651c45adg.jpg)
+
 ## 使用说明
 
 本仓库在之前开源工作[PMF](https://github.com/ICEORY/PMF)基础上修改，如果你熟悉我们开源的PMF仓库的使用方式，则很容易运行该项目
