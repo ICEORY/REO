@@ -8,6 +8,8 @@ Existing methods mainly rely on spatial transformation with sensor calibration i
 
 ![image-20241118152142577](./asset/image-20241118152142577.png)
 
+![image-20241118152142577](./asset/reo-smk-results.gif)
+
 ## Main Results
 
 - Efficiency analysis on OpenOccupancy nuScenes

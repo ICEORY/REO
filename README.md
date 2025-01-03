@@ -8,6 +8,8 @@
 
 ![image-20241118152142577](./asset/image-20241118152142577.png)
 
+![image-20241118152142577](./asset/reo-smk-results.gif)
+
 ## 主要实验结果
 
 - OpenOccupancy nuScenes 耗时对比
