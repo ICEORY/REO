@@ -24,6 +24,17 @@ Existing methods mainly rely on spatial transformation with sensor calibration i
 
   ![image-20241118152315972](./asset/image-20241118152315972.png)
 
+## Results on Test Sets
+
+- [SemanticKITTI Scene Completion](https://codalab.lisn.upsaclay.fr/my/competition/submission/869748/detailed_results/)
+
+  ![image-20250103163319139](./asset/image-20250103163319139.png)
+
+- [OCC3D-nuScenes](https://eval.ai/web/challenges/challenge-page/2045/leaderboard/4838) 
+
+![img_v3_02i6_aa614cbb-0128-43ea-9822-6af651c45adg](./asset/img_v3_02i6_aa614cbb-0128-43ea-9822-6af651c45adg.jpg)
+
+
 ## How to use
 
 This work is based on our prior work, i.e., [PMF](https://github.com/ICEORY/PMF). If you are familiar with our PMF project, you can run this project easily.
