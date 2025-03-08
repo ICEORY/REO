@@ -1,0 +1,4 @@
+nuscenes-devkit==1.1.11
+pyquaternion==0.9.9
+PyYAML==6.0.2
+tensorboardX==2.6.2.2

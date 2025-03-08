@@ -36,9 +36,38 @@
 
 ## 使用说明
 
-本仓库在之前开源工作[PMF](https://github.com/ICEORY/PMF)基础上修改，如果你熟悉我们开源的PMF仓库的使用方式，则很容易运行该项目
+本仓库在之前开源工作[PMF](https://github.com/ICEORY/PMF)基础上修改，如果你熟悉我们开源的PMF仓库的使用方式，则很容易运行该项目。训练效率方面，A800上基本上几个小时到一天（不同数据集）可以跑完一个实验
 
-本仓库完整的代码将会在论文最终发表之后公开...
+- 环境配置同PMF/EPMF项目类似，主要依赖pytorch1.13，额外依赖了pybind11
+
+```
+## 配置PMF环境
+conda create -n pmf python=3.8
+conda activate pmf
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install -r requirements.txt
+
+# 安装pybind11
+pip install pybind11
+
+# 编译c++依赖库，用于数据预处理
+cd pc_processor/dataset/cpp_api/
+mkdir build
+cd build
+cmake .. && make -j
+```
+
+- 模型训练：同PMF使用过程一致
+
+- 模型评测
+
+```
+python infer_smk.py
+```
+
+## 预训练模型
+- TBD
+
 
 ## 引用
 

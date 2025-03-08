@@ -1,0 +1,65 @@
+# common config
+save_path: "../../experiments/REOc-nusOcc3D/"
+seed: 42
+gpu: "0,1,2,3"
+print_frequency: 2
+n_threads: 8
+experiment_id: "exp_timestamp"
+
+# data conifg
+val_only: false
+is_debug: false
+n_epochs: 25
+batch_size: [4, 8]
+lr: 0.0004
+warmup_epochs: 1
+momentum: 0.9
+weight_decay: 0.01 #
+val_frequency: 1
+
+dataset: "nuScenesOcc3D" # 
+data_root: "/path/to/dataset/Occ3D_nuScenes/trainval/"
+source_data_root: "/path/to/dataset/nuscenes"
+
+grid_size: 0.4
+img_size: [448, 800]
+crop_img_size: [448, 800]
+voxel_range: [-40, 40, -40, 40, -1, 5.4]
+num_pc_voxels: 5120
+num_images: 6
+voxel_downscales: 4
+use_multi_sweeps: false
+use_pcd: true
+use_img: true
+use_radar: false
+
+use_proj_loss: true
+w_focal: 1.0
+w_dice: 1.0
+w_rgb: 1.0
+w_depth: 2.0
+
+net_type: "REONet" #
+backbone: "resnet50" # "resnet50" | "resnet50_wide"| "resnet101" | "efficientnet_b7" | "swin_t"
+imgnet_pretrained: true
+pretrained_model_root: "/path/to/imgnet_pretrained_model"
+num_classes: 18 # 1 unknown + 16cls + 1 empty
+num_sem_classes: 17 # 1 unknown + 16cls
+empty_idx: 17 # 17 is empty
+
+cls_freq: [
+  3.35586207e+01, 6.74429435e+01, 5.41720583e+00, 8.50222894e+01,
+  6.02836900e+02, 2.57425880e+01, 6.71976538e+00, 7.37457519e+01,
+  1.46978670e+01, 8.47657305e+01, 2.10332492e+02, 6.25252919e+03,
+  1.51988055e+02, 1.82700373e+03, 2.18313615e+03, 3.76735144e+03,
+  4.13879858e+03, 6.72769509e+04]
+
+# cehckpoint model
+checkpoint: null
+pretrained_model: null 
+img_pretrained_model: null 
+
+# options for inference, used in infer_xxx.py
+save_infer_result: false
+infer_path: "/path/to/exp/folder"
+infer_model: "best_SSCMeanIoU_model.pth"

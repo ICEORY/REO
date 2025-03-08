@@ -1,0 +1,11 @@
+experiments/
+__pycache__
+*.pth
+build/
+.idea/
+vis_results
+logs/
+.vscode/
+*.pkl
+deprecated/
+*.zip

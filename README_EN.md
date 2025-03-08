@@ -39,7 +39,37 @@ Existing methods mainly rely on spatial transformation with sensor calibration i
 
 This work is based on our prior work, i.e., [PMF](https://github.com/ICEORY/PMF). If you are familiar with our PMF project, you can run this project easily.
 
-The code of this project will be released after our work is finally accepted.
+- Prepare Environment
+
+```
+## env for pmf/epmf
+conda create -n pmf python=3.8
+conda activate pmf
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install -r requirements.txt
+
+# install pybind11
+pip install pybind11
+
+# compile .so for data preprocessing
+
+cd pc_processor/dataset/cpp_api/
+mkdir build
+cd build
+cmake .. && make -j
+```
+
+- training: please refer to pmf/epmf
+
+- evaluation
+
+```
+python infer_smk.py
+```
+
+## Pretrained models
+
+- TBD
 
 ## Citation
 
