@@ -48,11 +48,11 @@ conda activate pmf
 pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 
-# install pybind11
+## install pybind11
 pip install pybind11
 
-# compile .so for data preprocessing
-
+## compile .so for data preprocessing
+# please check the Python3_ROOT_DIR in CMakeLists.txt. eg. set(Python3_ROOT_DIR "/usr/local/lib/python3.8/dist-packages")
 cd pc_processor/dataset/cpp_api/
 mkdir build
 cd build

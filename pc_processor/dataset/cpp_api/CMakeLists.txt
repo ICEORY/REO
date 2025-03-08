@@ -9,9 +9,7 @@ add_compile_options(-W)
 add_compile_options(-std=c++14)
 
 
-# set(Python3_ROOT_DIR "/home/sti/software/anaconda3/envs/torch")
-# set(Python3_ROOT_DIR "/usr/local/lib/python3.8/dist-packages")
-set(Python3_ROOT_DIR "/usr/local/lib/python3.7/dist-packages")
+set(Python3_ROOT_DIR "/usr/local/lib/python3.8/dist-packages")
 find_package(Eigen3 REQUIRED)
 find_package(pybind11 CONFIG REQUIRED
         PATHS ${Python3_ROOT_DIR}

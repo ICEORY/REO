@@ -47,11 +47,12 @@ conda activate pmf
 pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 
-# 安装pybind11
+## 安装pybind11
 pip install pybind11
 
-# 编译c++依赖库，用于数据预处理
+## 编译c++依赖库，用于数据预处理 
 cd pc_processor/dataset/cpp_api/
+# 注意修改CMakeLists里面的python路径，修正到自己环境路径 set(Python3_ROOT_DIR "/usr/local/lib/python3.8/dist-packages")
 mkdir build
 cd build
 cmake .. && make -j
