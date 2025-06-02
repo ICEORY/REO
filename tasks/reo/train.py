@@ -630,12 +630,6 @@ class Trainer(object):
             self.recorder.tensorboard.add_scalar(
                 tag="{}_lr".format(mode), scalar_value=lr, global_step=epoch)
 
-            ## mtloss
-            if mode == "Train" and self.use_mtloss:
-                sigma = self.mt_loss.module.sigma
-                for idx in range(sigma.size(0)):
-                    self.recorder.tensorboard.add_scalar(
-                        tag="{}_LossWeight_{}".format(mode, idx), scalar_value=sigma[idx].item(), global_step=epoch)
             ## mse 
             self.recorder.tensorboard.add_scalar(
                 tag="{}_RGBRMSE".format(mode), scalar_value=rgb_rmse_meter.avg, global_step=epoch)
